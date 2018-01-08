@@ -21,6 +21,7 @@ public class ExampleServlet extends HttpServlet {
 		if (log.isTraceEnabled())
 			log.trace(String.format("doGet(%s, %s)", req, resp));
 		resp.setContentType("text/plain");
+		System.out.println()
 		resp.getWriter().write(req.getPathInfo());
 	}
 }
